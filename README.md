@@ -1,37 +1,65 @@
-## Welcome to GitHub Pages
+## Installation
+- **Needs jQuery Library**
+- Include the igni.min.js file after jQuery
+- Include the igni.min.css file inside header HTML
 
-You can use the [editor on GitHub](https://github.com/krownf/igni/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## Usage
+```javascript
+$.ignite();
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Examples
+#### A successful message
+```javascript
+$.ignite({
+   theme: 'success',
+   textMessage: '<strong>Congratulations!</strong> A successful message!'
+});
+```
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/krownf/igni/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### An error message
+```javascript
+$.ignite({
+   theme: 'danger',
+   textMessage: '<strong>Oops!</strong> Something went wrong :('
+});
+```
 
-### Support or Contact
+#### A simple loader
+```javascript
+//ignite loader
+loading = $.ignite({
+              theme: 'info',
+              textMessage: '<strong>Loading...</strong> Please wait.'
+          });
+          
+//dismiss loader
+loading.destroy();
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Options
+#### ``type`` {String}
+Define alert type. (message or loading)
+#### Default `'message'`
+
+#### ``timer`` {Number}
+Display duration in milliseconds. (0 for disabled)
+#### Default `'4000'`
+
+#### ``position`` {String}
+Alert orientation. (top or bottom)
+#### Default `'top'`
+
+#### ``theme`` {String}
+Alert style. (default, dark, success, danger, info, warning)
+#### Default `'default'`
+
+#### ``textMessage`` {String}
+Alert content.
+#### Default `'Hello! This is a default message from igni :)'`
+
+#### ``dismiss`` {Boolean}
+Enable close button.
+#### Default `true`
+
