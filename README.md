@@ -1,7 +1,7 @@
 ## Installation
 - **Needs jQuery Library**
 - Include the igni.min.js file after jQuery
-- Include the igni.min.css file inside header HTML
+- Include the igni.min.css file inside header tag HTML
 
 ## Usage
 ```javascript
