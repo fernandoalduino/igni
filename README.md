@@ -39,27 +39,27 @@ loading.destroy();
 ```
 
 ## Options
-#### ``type`` {String}
+### `type {String}`
 Define alert type. (message or loading)
-#### Default `'message'`
+**Default**: `'message'`
 
-#### ``timer`` {Number}
+### `timer {Number}`
 Display duration in milliseconds. (0 for disabled)
-#### Default `'4000'`
+**Default**:  `'4000'`
 
-#### ``position`` {String}
+### `position {String}`
 Alert orientation. (top or bottom)
-#### Default `'top'`
+**Default**:  `'top'`
 
-#### ``theme`` {String}
+### `theme {String}`
 Alert style. (default, dark, success, danger, info, warning)
-#### Default `'default'`
+**Default**:  `'default'`
 
-#### ``textMessage`` {String}
+### `textMessage {String}`
 Alert content.
-#### Default `'Hello! This is a default message from igni :)'`
+**Default**:  `'Hello! This is a default message from igni :)'`
 
-#### ``dismiss`` {Boolean}
+### `dismiss {Boolean}`
 Enable close button.
-#### Default `true`
+**Default**:  `true`
 
