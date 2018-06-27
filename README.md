@@ -69,3 +69,20 @@ Enable close button.
 
 **Default**:  `true`
 
+### `dismissButtonText {String}`
+*Require `dismiss {true}`*
+Changes the close button text.
+
+**Default**:  `Close`
+
+
+
+## Helpdesk
+
+If you have any idea to improve this project or any problem using this, please
+feel free to upload an [issue](https://github.com/krownf/igni/issues).
+
+
+## License
+
+[MIT](LICENSE)
