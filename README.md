@@ -30,6 +30,7 @@ $.ignite({
 ```javascript
 //ignite loader
 loading = $.ignite({
+              type: 'loader',
               theme: 'info',
               textMessage: '<strong>Loading...</strong> Please wait.'
           });
