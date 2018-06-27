@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Igni Examples</title>
+    <link type="text/css" rel="stylesheet" href="igni/igni.css">
+    </head>
+    <style>
+
+	body{
+		background-color:#888;
+	}
+
+    * {
+      outline: none;
+    }
+
+    body > button {
+      left: 50%;
+      margin-left: -70px;
+      top: 50%;
+      margin-top: -105px;
+      position: absolute;
+    }
+    </style>
+    <body>
+        <button>Click me</button>
+        
+    </body>
+    <script type="text/javascript" src="igni/jquery.min.js"></script>
+    <script type="text/javascript" src="igni/igni.js"></script>
+    <script>
+    loading = $.ignite({
+                  theme: 'info',
+                  textMessage: 'Loading...',
+                  type: 'loader'
+              });
+        
+    $(document).ready(function() {   
+        loading.destroy();
+    });
+        
+    $("button").click(function(){
+        myAlert = $.ignite();
+    });
+    </script>
+</html>
